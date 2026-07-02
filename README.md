@@ -93,6 +93,7 @@ VNS Asset Manager offers flexible pricing to suit every developer, from beginner
 | **Stealth Engine (Bypass)**| ❌ Standard | ✅ Stealth & Ghost | ✅ All (Inc. God Mode) | ✅ All Modes |
 | **Scheduled Uploads** | ❌ Locked | ✅ 50 queue max | ✅ 500 queue max | ✅ Unlimited Queue |
 | **UI Spritesheet Packer** | ✅ Max 512x512 | ✅ Full 1024x1024 | ✅ Full 1024x1024 | ✅ Full 1024x1024 |
+| **Skybox Generator** | ❌ Locked | ✅ Max 512x512 | ✅ High (1024x1024) | ✅ High (1024x1024) |
 | **Live Studio Sync** | ❌ Locked | ✅ Unlocked | ✅ Unlocked | ✅ Unlocked |
 | **Asset Cloner** | ❌ Locked | ❌ Locked | ✅ 100 clones/day | ✅ **Unlimited** |
 | **Video Engine** | ❌ Locked | ✅ Low (15 FPS) | ✅ High (30 FPS) | ✅ Extreme (60 FPS) |
@@ -130,6 +131,25 @@ VNS Asset Manager is designed to be lightweight but handles intensive tasks like
 3. Run the installer and open the app.
 4. Login via Discord and enter your License Key.
 
+### Development Setup
+If you are contributing to the source code:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/NavisAL04/VNS-AssetManager.git
+
+# 2. Install dependencies
+npm install
+
+# 3. Create .env file based on .env.example
+# Fill in your Discord Client ID and KeyAuth Credentials
+
+# 4. Start the development server
+npm run dev
+
+# 5. Build for production (Generates .exe)
+npm run publish
+```
 
 ---
 
