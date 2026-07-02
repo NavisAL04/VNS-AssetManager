@@ -130,25 +130,6 @@ VNS Asset Manager is designed to be lightweight but handles intensive tasks like
 3. Run the installer and open the app.
 4. Login via Discord and enter your License Key.
 
-### Development Setup
-If you are contributing to the source code:
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/NavisAL04/VNS-AssetManager.git
-
-# 2. Install dependencies
-npm install
-
-# 3. Create .env file based on .env.example
-# Fill in your Discord Client ID and KeyAuth Credentials
-
-# 4. Start the development server
-npm run dev
-
-# 5. Build for production (Generates .exe)
-npm run publish
-```
 
 ---
 
