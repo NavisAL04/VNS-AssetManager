@@ -58,6 +58,9 @@ Built with performance and security in mind, VNS Asset Manager uses a modern tec
 * 🎬 **Video Engine (Video-to-Roblox)**
   Convert MP4/WebM videos into optimized Spritesheets! The engine automatically splits frames, calculates ImageRectOffsets, and generates a ready-to-use Luau script to play videos seamlessly inside Roblox using GUI or Decals.
 
+* 🌌 **Skybox 360 to Cubemap Generator (Lanczos5 Interpolation)**
+  Upload a single 360-degree equirectangular panorama image (PNG, JPG, WebP) and the engine will mathematically project and slice it into the perfect 6-face standard cubemap format (`SkyboxFt`, `SkyboxBk`, `SkyboxLf`, `SkyboxRt`, `SkyboxUp`, `SkyboxDn`). Features **Lanczos5 interpolation** for maximum sharpness without aliasing, and includes built-in AI prompt generation tips! Automatically pushes all 6 textures via Open Cloud and creates a seamless Sky object in your Studio workspace!
+
 * 🧩 **UI Spritesheet Packer**
   Drag & drop multiple UI icons (PNG/JPG) to automatically pack them into a single optimized 1024x1024 texture atlas using the MaxRects bin packing algorithm. Generates a Luau script mapping all ImageRectOffsets and ImageRectSizes instantly!
 
@@ -127,6 +130,26 @@ VNS Asset Manager is designed to be lightweight but handles intensive tasks like
 3. Run the installer and open the app.
 4. Login via Discord and enter your License Key.
 
+### Development Setup
+If you are contributing to the source code:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/NavisAL04/VNS-AssetManager.git
+
+# 2. Install dependencies
+npm install
+
+# 3. Create .env file based on .env.example
+# Fill in your Discord Client ID and KeyAuth Credentials
+
+# 4. Start the development server
+npm run dev
+
+# 5. Build for production (Generates .exe)
+npm run publish
+```
+
 ---
 
 ## 🛡️ Security Note
@@ -137,4 +160,3 @@ Your `.ROBLOSECURITY` cookies are **never** sent to any external server. They ar
 <div align="center">
   <i>Developed with ❤️ by Vechnost Studio</i>
 </div>
-
